@@ -1,34 +1,44 @@
 {
   "schemaVersion": 1,
-  "id": "sample",
+  "id": "adornments",
   "version": "${version}",
 
-  "name": "Kambrik Sample Mod",
+  "name": "Adornments",
   "description": "A Sample Mod for Kambrik",
   "authors": [
-    "Ejektaflex"
+    "Ejektaflex",
+    "Lemonszz (Original Author)"
   ],
   "contact": {
     "homepage": "None yet",
-    "sources": "https://github.com/ejektaflex/KambrikSampleMod",
-    "issues": "https://github.com/ejektaflex/KambrikSampleMod/issues"
+    "sources": "https://github.com/ejektaflex/Adornments",
+    "issues": "https://github.com/ejektaflex/Adornments/issues"
   },
 
   "license": "MIT",
-  "icon": "assets/sample/icon.png",
+  "icon": "assets/adornments/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.ExampleMod"
+      {
+        "adapter": "kotlin",
+        "value": "io.ejekta.adornments.AdornmentMod"
+      }
+    ],
+    "kambrik": [
+      {
+        "adapter": "kotlin",
+        "value": "io.ejekta.adornments.AdornmentMod"
+      }
     ]
   },
   "mixins": [
-    "sample.mixins.json"
+    "adornments.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.12.8",
+    "fabricloader": ">=0.12.12",
     "fabric": "*",
     "minecraft": "~1.18-0",
     "fabric-language-kotlin": ">=1.6.0"

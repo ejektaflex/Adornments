@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "io.ejekta.adornments.mixins",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"SmithingScreenHandlerMixin"
+	],
+	"client": [
+		"client.ArmorFeatureRendererMixin",
+		"client.ItemRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
